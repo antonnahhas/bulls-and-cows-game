@@ -1,8 +1,21 @@
+# Bulls and Cows: A Memory Game
+
+Welcome to the Bulls and Cows game! This project is a web-based adaptation of the classic memory game where the player must guess the correct digits, with hints provided in the form of bulls and cows.
+
+## Table of Contents
+
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [File Structure](#file-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
 
 ## Authors
 * Name: Anton Nahhas  
 * Name: Sameer Jbara 
 
+## Technologies Used
 
 ## How to use this template
 This is the template for a project where front-end and back-end are separated.
@@ -39,4 +52,27 @@ The template depends on:
 
 Then browse:
 * your react client at http://localhost:3000
+
+
+
+## Getting Started
+
+1. Clone the repository.
+2. Install the necessary dependencies.
+3. Start the backend server by running the servlet.
+4. Navigate to the frontend directory and run `npm start` to initiate the React app.
+5. Visit `http://localhost:3000` in your browser to play the game!
+
+## File Structure
+
+- **ApiServlet.java**: Backend server endpoint for managing high scores. It retrieves and updates scores from a data file and provides this data to the frontend.
+- **App.js**: The main frontend controller. This component orchestrates various game elements like the game form, high scores, and user guesses.
+- **gameBase.js**: Provides the base design of the game, offering players an overview and instructions.
+- **GameForm.js**: The core game logic is here. Players can make guesses and get feedback on how close their guesses are.
+- **GuessList.js & TableRow.js**: Together, they display the user's guess history in a structured table format.
+- **HandleError.js**: Offers user feedback in the form of error messages.
+- **HighScore.js, HighScoreTable.js & HighScoreRow.js**: Handle the display and submission of high scores.
+
+
+
 
